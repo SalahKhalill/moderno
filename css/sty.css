@@ -1,0 +1,306 @@
+/* Start varibales */
+:root {
+    
+}
+/* End varibales */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "work sans" , sans-serif;
+}
+.parent {
+    background-color: #eee;
+    
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+/*Small */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* End Global Rules */
+
+/* START HEADER */
+.header{
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    height: calc(100vh - 20px);    
+    position: relative;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.header .bigscreen ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    padding: 30px;
+    margin: 20px;
+    
+}
+.header .bigscreen ul li {
+    padding-left: 20px;
+}
+.header .bigscreen ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.header .bigscreen ul li a:hover{
+    color: blueviolet;
+}
+.header .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+}
+.header .text h2 {
+    justify-content: space-between;
+    font-weight: 800;
+    color: darkolivegreen;
+    font-size: 50px;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 2px black;
+    letter-spacing: 6px;
+}
+.header .text p {
+    color: dimgrey;
+    font-size: 19px;
+    line-height: 1.8;
+    -webkit-text-stroke: 0.4px black;
+    text-shadow: 0.5px 0.2px lightgreen;
+}
+.header .btn{
+    border-radius: 1px;
+    margin-top: 10px;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* END HEADER */
+/* Start Description */
+.description {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--section-background);
+}
+.description .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.description .feat  {
+    padding: 20px;
+    text-align: center;
+}
+.description .feat i {
+    color: orangered;
+}
+.description .feat h3 {
+    font-weight: 800;
+    margin: 30px 0;
+    }
+    .description .feat p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 18px;
+    }
+/* End Description */
+/* START STORIES */
+.stories .container{
+    display: flex;
+    background-color: #eee;
+}
+.stories .right {
+    width: 400px;
+    padding-left: 10px;
+    margin-top: 50px;
+}
+.stories .left img{
+    width: 400px;
+    padding-left: 30px;
+    margin-top: 90px;
+    margin-left: 150px;
+}
+.stories .right h3 {
+    font-weight: 800;
+    margin: 10px 0;
+    }
+    .stories .right p {
+        line-height: 1.8;
+        color: #777;
+        font-size: 15px;
+        }
+        .stories .right .btn{
+            
+            border-radius: 0px;
+            margin-top: 10px;
+            background-color: orangered;
+            color: white;
+            font-weight: 600;
+            width: 120px;                
+            height: 35px;
+            cursor: pointer;
+        }
+        .stories .main {
+            text-align: center;
+        }
+        .stories .main h3{
+            font-weight: 800;
+            margin: 30px 0;
+        }
+        .stories .main p {
+            font-size: 19px;
+            line-height: 1.8;
+            -webkit-text-stroke: 0.5px black;
+            text-shadow: 0.5px 5px 7px black;
+        }
+        /* END STORIES */
+        /* Start images */
+        .multiple .container {
+            background-color: #eee;
+        }
+        .container .first3 {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px;
+            
+        }
+        .container .last3 {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px;
+        }
+      
+        /* End Images */
+        /* start MAIN */
+        .main1 {
+            text-align: center;
+        }
+        .main1 h3{
+            font-weight: 800;
+            margin: 30px 0;
+        }
+        .main1 p {
+            color: #777;
+            font-weight: 300;
+            font-size: 19px;
+            line-height: 1.8;
+            -webkit-text-stroke: 0.5px black;
+            text-shadow: 0.5px 5px 7px black;        }
+        /* end MAIN */
+       /* start footer */
+.first{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 24, 24);
+    font-weight: bold;
+    text-align: center;
+}
+.first .col1 p{
+    color: rgb(196, 214, 214);
+}
+.copy{
+    background-color: rgb(20, 24, 24);
+    font-weight: bold;
+    color: darkcyan;
+
+}
+span{
+    color: rgb(196, 214, 214);
+}
+.copy{
+    text-align: center;
+    text-decoration: overline;
+}
+.first .col1 h4 {
+    color: darkcyan;
+}
+.first .col3 h4 {
+    color: darkcyan;
+    padding-right: 100px;
+}
+.first .col3 p {
+    padding-right: 100px;
+    color: rgb(196, 214, 214);
+}
+.first .col2 h5{
+    color: darkcyan;
+}
+/* end footer */
+
+
+@media (min-width: 414px) {
+    .bigscreen{
+        display: none;
+    }
+    footer h5 {
+        display: none;
+    }
+    footer h4 {
+        padding-left: 30px;
+    }
+    footer .oo{
+        padding-left: 20px;
+        margin-top: 18px;
+    }
+    .main p{
+        font-size: 5px;
+        display: inline;
+    }
+    .container .left img{
+        padding-left: 50px;
+        position: absolute;
+        display: none;
+    }
+    .container .right p{
+        display: inline;
+
+    }
+    .left{
+        position: relative;
+    }
+    .first3 .img2, .img3{
+        display: none;
+    }
+    .last3 .img5, .img6{
+        display: none;
+    }
+}
